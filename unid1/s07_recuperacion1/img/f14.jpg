@@ -1,0 +1,131 @@
+etryName:"Copy",hideMenuItemTelemetryName:"Hide",hideHeadlineTelemetryName:"Hide Story",muteMenuItemTelemetryName:"MutePublisher",muteButtonTelemetryName:"Mute",muteConfirmationTelemetryName:"Hide Stories from Publisher",reportButtonTelemetryName:"Submit",reportCheckedTelemetryName:"Checked",reportDialogTelemetryName:"ReportedReason",reportHeadlineTelemetryName:"Report an issue",reportMenuItemTelemetryName:"ReportArticle",reportUncheckedTelemetryName:"Unchecked",reportDialogFeedbackTextTelemetryName:"Feedback",reportDialogPrivacyStatementTelemetryName:"Privacy Statement",saveMenuItemTelemetryName:"Save",showFewerHeadlineTelemetryName:"Fewer stories like this",showFewerMenuItemTelemetryName:"showFewer",showMoreHeadlineTelemetryName:"More stories like this",showMoreMenuItemTelemetryName:"showMore",shareArticleTelemetryName:"ShareArticle",shareDialogTelemetryName:"Share"};class i{constructor(e){if(this.componentRoot=e,this.mapSocialMediaShareIconTelemetry=(e,t,a,n={})=>(this.socialMediaShareIconTelemetryObjects[e]=this.shareDialogTelemetryObject.addOrUpdateChild({name:t,behavior:r.c.Navigate,action:r.b.Click,content:Object.assign(Object.assign({},n),{headline:a})},this.socialMediaShareIconTelemetryObjects[e]),this.socialMediaShareIconTelemetryObjects[e]),this.mapMenuItemTelemetry=(e,t,a,r,n,i)=>{if(this.componentRoot)return this.menuItemsTelemetryObjects[e]=this.componentRoot.addOrUpdateChild({name:e,type:t,behavior:a,content:Object.assign(Object.assign({},i),{headline:r||e,id:n})},this.menuItemsTelemetryObjects[e]),this.menuItemsTelemetryObjects[e]},this.getReportDialogActionButtonTelemetryObject=(e,t,a,i,o)=>(this.reportDialogTelemetryObjects.actionButtonTelemetryObject=this.reportDialogTelemetryObjects.dialogTelemetryObject.addOrUpdateChild({name:n.reportButtonTelemetryName,type:r.f.Report,behavior:r.c.Report,action:r.b.Submit,content:Object.assign({headline:a,id:i},o),ext:{fields:{checkedReportOption:e,feedbackText:t}}},this.reportDialogTelemetryObjects.actionButtonTelemetryObject),this.reportDialogTelemetryObjects.actionButtonTelemetryObject),!e)return;const t=e.contract.content||{},a=this.componentRoot.addOrUpdateChild({name:n.muteConfirmationTelemetryName,type:r.f.Interaction,behavior:r.c.Mute,content:Object.assign(Object.assign({},t),{headline:n.muteButtonTelemetryName}),action:r.b.View});this.muteDialogTelemetryObjects={dialogTelemetryObject:a,cancelButtonTelemetryObject:a.addOrUpdateChild({name:n.cancelTelemetryName,behavior:r.c.MuteCancel,content:Object.assign(Object.assign({},t),{headline:n.cancelTelemetryName})}),closeButtonTelemetryObject:a.addOrUpdateChild({name:n.closeModuleTelemetryName,behavior:r.c.Close,content:Object.assign(Object.assign({},t),{headline:n.closeHeadlineTelemetryName})}),actionButtonTelemetryObject:a.addOrUpdateChild({name:n.muteButtonTelemetryName,behavior:r.c.Mute,content:Object.assign(Object.assign({},t),{headline:n.hideMenuItemTelemetryName})})};const i=this.componentRoot.addOrUpdateChild({name:n.reportDialogTelemetryName,type:r.f.Interaction,behavior:r.c.Report,content:Object.assign(Object.assign({},t),{headline:n.reportHeadlineTelemetryName}),action:r.b.Click});this.reportDialogTelemetryObjects={dialogTelemetryObject:i,cancelButtonTelemetryObject:i.addOrUpdateChild({name:n.cancelTelemetryName,behavior:r.c.Cancel,content:Object.assign(Object.assign({},t),{headline:n.cancelTelemetryName})}),closeButtonTelemetryObject:i.addOrUpdateChild({name:n.closeModuleTelemetryName,behavior:r.c.Close,content:Object.assign(Object.assign({},t),{headline:n.closeHeadlineTelemetryName})}),actionButtonTelemetryObject:i.addOrUpdateChild({name:n.reportButtonTelemetryName,behavior:r.c.Mute,content:Object.assign(Object.assign({},t),{headline:t.headline})})},this.shareDialogTelemetryObject=this.componentRoot.addOrUpdateChild({name:n.shareDialogTelemetryName,type:r.f.Interaction,behavior:r.c.Share,content:Object.assign(Object.assign({},t),{headline:n.shareDialogTelemetryName}),action:r.b.Click}),this.articleShareTelemetryObject=this.shareDialogTelemetryObject.addOrUpdateChild({name:n.shareArticleTelemetryName,type:r.f.Headline,behavior:r.c.Navigate,content:Object.assign(Object.assign({},t),{headline:n.shareArticleTelemetryName})}),this.closeShareButtonTelemetryObject=this.shareDialogTelemetryObject.addOrUpdateChild({name:n.closeModuleTelemetryName,behavior:r.c.Close,action:r.b.Click,content:Object.assign(Object.assign({},t),{headline:n.closeHeadlineTelemetryName})}),this.copyShareButtonTelemetryObject=this.shareDialogTelemetryObject.addOrUpdateChild({name:n.copyTelemetryName,behavior:r.c.Share,action:r.b.Click,content:Object.assign(Object.assign({},t),{headline:n.copyTelemetryName})}),this.socialMediaShareIconTelemetryObjects={},this.menuItemsTelemetryObjects={},this.reportDialogPrivacyStatementLinkTelemetryObject=i.addOrUpdateChild({name:n.reportDialogPrivacyStatementTelemetryName,behavior:r.c.Navigate,content:Object.assign(Object.assign({},t),{headline:n.reportDialogPrivacyStatementTelemetryName})})}setTelemetryObjectContract(e,t,a){return e.contract&&(e.contract.content.id=t,e.contract.content.type=r.d.Article,e.contract.destinationUrl=a||""),e}}},w5Ry:function(e,t,a){"use strict";a.d(t,"a",(function(){return j}));var r=a("D57K"),n=a("P4Ao"),i=a("oePG");class o extends n.a{constructor(){super(...arguments),this.localizedStrings={},this.share=null,this.shareToList=[],this.dismissDialog=()=>{this.$emit("share-dialog-dismiss")}}}Object(r.e)([i.d],o.prototype,"localizedStrings",void 0),Object(r.e)([i.d],o.prototype,"copyLinkButtonHandler",void 0),Object(r.e)([i.d],o.prototype,"share",void 0),Object(r.e)([i.d],o.prototype,"shareToList",void 0),Object(r.e)([i.d],o.prototype,"closeButtonTelemetryTag",void 0),Object(r.e)([i.d],o.prototype,"copyLinkButtonTelemetryTag",void 0);var s=a("4X57"),c=a("cQsl"),l=a("kL0l"),d=a("wHpb"),u=a("Z5nQ");const p=s.a`
+    ${u.a} :host {
+        --corner-radius: 2px;
+        --dialog-z-index: 0;
+    }
+
+    .dialog a {
+        color: inherit;
+        outline: none;
+        text-decoration: none;
+    }
+
+    .dialog a:hover .line-clamp,
+    .dialog a:${d.a} .line-clamp {
+        text-decoration: underline;
+    }
+
+    section {
+        display: grid;
+        font-size: var(--type-ramp-minus-1-line-height);
+        font-weight: 600;
+        line-height: var(--type-ramp-plus-1-line-height);
+        margin: 0 24px 20px;
+    }
+
+    section div {
+        grid-column: 1;
+    }
+
+    section div msft-attribution {
+        margin-top: 8px;
+    }
+
+    section img {
+        border-radius: var(--corner-radius);
+        grid-column: 2;
+        justify-self: end;
+        margin-inline-start: 16px;
+    }
+
+    section img.article-img {
+        height: 100px;
+        object-fit: cover;
+        width: 100px;
+    }
+
+    .atr-img {
+        border-radius: 0;
+        margin-inline-start: 0;
+    }
+
+    .copy-button {
+        align-items: center;
+        border-radius: var(--corner-radius);
+        display: flex;
+        fill: currentcolor;
+        height: 30px;
+        justify-content: center;
+        margin-bottom: 8px;
+        width: 30px;
+        --elevation: 11; 
+        ${c.a};
+    }
+
+    hr.divider {
+        border-top: 1px solid ${l.i.var};
+    }
+
+    .dialog {
+        --dialog-height: var(--share-dialog-height, auto);
+        --dialog-width: var(--share-dialog-width, 400);
+        position: absolute;
+        z-index: var(--share-dialog-z-index);
+    }
+
+    .heading {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: 1;
+        position: relative;
+        width: 100%;
+    }
+
+    .heading fluent-button svg {
+        height: 12px;
+        width: 12px;
+    }
+
+    .heading span {
+        font-size: var(--type-ramp-plus-2-font-size);
+        font-weight: 600;
+        line-height: var(--type-ramp-plus-3-font-size);
+        margin-inline-start: 24px;
+        margin-bottom: 16px;
+        margin-top: 20px;
+    }
+
+    .share-button {
+        align-items: center;
+        background: none;
+        border: calc(var(--focus-outline-width) * 1px) solid transparent;
+        color: inherit;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        font-size: var(--type-ramp-minus-1-font-size);
+        line-height: var(--type-ramp-minus-1-line-height);
+        text-decoration: none;
+    }
+
+    .share-button:${d.a} {
+        border: calc(var(--focus-outline-width) * 1px) solid ${l.L.var};
+    }
+
+    .share-button img {
+        border-radius: var(--corner-radius);
+        margin-bottom: 8px;
+    }
+
+    .share-grid {
+        display: grid;
+        grid-gap: 16px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 27px 16px;
+    }
+
+    .social-button {
+        border-radius: 2px;
+        height: 32px;
+        margin: 0 auto 8px auto;
+        position: 
